@@ -1,6 +1,12 @@
 function distanceFromHqInBlocks(someValue) {
   //returns the number of blocks given a value 
-  return Math.abs(someValue - 42);
+  //return Math.abs(someValue - 42);  
+  if (someValue < 42) { 
+    return 42 - someValue; 
+  } 
+  else if (someValue > 42) { 
+    return someValue - 42;
+  }
 } 
 
 function distanceFromHqInFeet(someValue) {
